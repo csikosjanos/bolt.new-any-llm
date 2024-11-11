@@ -84,7 +84,7 @@ async function getOllamaModels(): Promise<ModelInfo[]> {
   }
 }
 
-async function getOpenAILikeModels(): Promise<ModelInfo[]> {
+async function getOAILikeModels(): Promise<ModelInfo[]> {
   try {
     const base_url = import.meta.env.OPENAI_LIKE_API_BASE_URL || "";
     if (!base_url) {
